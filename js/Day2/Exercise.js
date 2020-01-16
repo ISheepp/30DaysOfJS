@@ -28,7 +28,7 @@
 24. Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
 25. Use repeat() method to print 30 Days Of JavaScript 2 times
 */
-
+var b = 12;
 var challenge = '30 Days Of JavaScript';
 console.log(challenge);
 console.log(challenge.length)
@@ -38,3 +38,21 @@ console.log(challenge.toUpperCase());
 console.log(challenge.toLowerCase());
 console.log(challenge.substr(2));
 console.log(challenge.substr(0,2));
+console.log(challenge.includes('Script'));
+var str = new Array;
+str = challenge.split(" ");
+console.log(str);
+var a = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
+console.log(a.split(', '));
+//replace()方法---stringObject.replace(regexp/substr,replacement)
+console.log(challenge.replace(/30 Days Of JavaScript/,'30 Days Of Python'));
+console.log(challenge.charAt(15));
+console.log(challenge.charCodeAt(11));//J的index为11
+console.log(challenge.indexOf('30 Days Of JavaScript'));
+
+var one = '30Days of';
+var two = 'JavaScript';
+var single = '';
+console.log(single.concat(one,' ',two));
+//string.repeat(count)
+console.log(challenge.repeat(2));
