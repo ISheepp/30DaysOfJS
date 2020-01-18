@@ -70,4 +70,17 @@ age = prompt('Enter your age:')
 var num = 18-age
 if(age >= 18)
     console.log('You are old enough to drive.')
-console.log('You are left with '+num+' years to drive.')
+else
+    console.log('You are left with '+num+' years to drive.')
+
+
+let a = 4
+let b = 3
+c = (a > b ? 'a > b' : 'a < b');
+console.log(c)
+
+num = prompt('enter a number:')
+if(num % 2 == 0)
+  console.log('偶数')
+else
+  console.log('奇数')
