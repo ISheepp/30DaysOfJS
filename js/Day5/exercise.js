@@ -125,4 +125,8 @@ var mixedDataTypes = [
     2323,
     22.3
 ]
-console.log(mixedDataTypes.length)
+console.log(mixedDataTypes.length);
+var itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple','IBM', 'Oracle', 'Amazon'];
+console.log(itCompanies)
+for(var i = 0; i < itCompanies.length; i++)
+    console.log(itCompanies[i])
