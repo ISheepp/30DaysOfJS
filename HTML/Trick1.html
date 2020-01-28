@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trick1</title>
+    <style type="text/css">
+        button {
+            animation: fade 1s ease forwards;
+        }
+
+        @keyframes fade {
+            from {
+                display: block;
+            }
+
+            to {
+                display: none;
+            }
+        }
+
+        p {
+            color: aqua;
+            font-size: 12px;
+        }
+
+        div {
+            width: 100px;
+            height: 75px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        div#div2 {
+            transform: rotateX(120deg);
+            -webkit-transform: rotateX(120deg);
+            /* Safari and Chrome */
+        }
+    </style>
+</head>
+
+<body>
+    <div>Hello. This is a DIV element.</div>
+
+    <div id="div2">Hello. This is a DIV element.</div>
+
+    <button>Submit</button>
+</body>
+
+</html>
