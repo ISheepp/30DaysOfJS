@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-</head>
-<body>
-    <script>
-        function f(){
-            var lzy = 'show me'
-            document.write(lzy)
+    <script type="text/javascript">
+        function disp_prompt() {
+            var name = prompt("Please enter your name", "")
+            if (name != null && name != "") {
+                document.write("Hello " + name + "!")
+            }
         }
-        f()
     </script>
+</head>
+
+<body>
+    <input type="button" onclick="disp_prompt()" value="test" />
 </body>
+
 </html>
