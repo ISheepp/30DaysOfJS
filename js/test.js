@@ -1,2 +1,2 @@
-var n = 1.5
+let n = 1.5
 console.log(Math.ceil(n))
