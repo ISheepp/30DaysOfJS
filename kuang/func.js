@@ -1,5 +1,5 @@
 function abs(x) {
-    console.log("x=>" +x)
+    console.log("x=>" +x);
 
     //arguments关键字代表传递进来的所有的参数，是一个数组！
     for (let i = 0; i <arguments.length; i++){

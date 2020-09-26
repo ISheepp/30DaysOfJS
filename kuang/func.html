@@ -9,7 +9,19 @@
 
 <script>
     // abs(-4,3,42,2);
-    aaa(1,2,3,4,5,6,7)
+    aaa(1,2,3,4,5,6,7);
+
+    var lzy = {
+        name: '林子洋',
+        birth: 1998,
+        age: function () {
+            //今年减去出生年
+            var now = new Date().getFullYear();
+            return now - this.birth;
+        }
+    };
+
+    console.log(lzy.age());
 </script>
 
 </body>
