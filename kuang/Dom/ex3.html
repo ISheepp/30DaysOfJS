@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+    <script src="dom.js"></script>
+</head>
+<body>
+<div id="father">
+    <h1>标题一</h1>
+    <p id="p1">p1</p>
+    <p class="p2">p2</p>
+</div>
+<script>
+    var h1 = document.getElementsByTagName("h1");
+    var self = document.getElementById("p1");
+    var p2 = document.getElementsByClassName("p2");
+
+    var father = document.getElementById("father");
+    //删除节点的步骤：先找到父节点，再通过父节点删除自己
+    father.removeChild(self);
+</script>
+
+</body>
+</html>
