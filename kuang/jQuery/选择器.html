@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-3.5.1.js"></script>
+    <style>
+        #divMove{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<!--获取鼠标当前的一个坐标-->
+
+mouse ：<span id="mouseMove"></span>
+<div id="divMove">
+    在这里移动鼠标试试
+</div>
+
+<script>
+
+    //jQuery
+    $('p').click();//标签选择器
+    $('#id1').click();//id选择器
+    $('.class1').click();//class选择器
+
+
+    //事件 鼠标事件(mouse...) 键盘事件()
+    //当网页元素加载完毕之后响应事件
+
+    //相当于加载完了
+    $(function () {
+        $("#divMove").mousemove(function (e) {
+            $("#mouseMove").text("x:" + e.pageX + "y:" + e.pageY);
+        })
+    })
+
+</script>
+
+</body>
+</html>
